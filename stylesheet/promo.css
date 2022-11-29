@@ -17,12 +17,24 @@
     position: absolute;
 }
 
+
+
 .compas__img {
     top: 50%;
     transform: translateY(-50%);
     left: -65%;
     animation: rotate 10s linear infinite;
     position: absolute;
+}
+@media (min-width: 1024px) {
+    .compas__img {
+        left: -95%;
+    }
+}
+@media (min-width: 834px) {
+    .compas__img {
+        left: -115%;
+    }
 }
 
 .career {
@@ -37,7 +49,12 @@
     font-size: 69px;
     line-height: 81px;
 }
-
+@media (min-width: 834px) {
+    .career__title {
+        font-size: 43px;
+        line-height: 50px;
+    }
+}
 .career__text {
     max-width: 636px;
 }
@@ -47,10 +64,24 @@
     bottom: 295px;
     right: 419px
 }
+@media (min-width: 834px) {
+    .physics__img  {
+        bottom: 86px;
+        right: 207px
+        
+    }
+}
 .chemistry__img {
     position: absolute;
     bottom: 222px;
     right: 497px
+}
+@media (min-width: 834px) {
+    .chemistry__img {
+        bottom: 43px;
+        right: 318px
+        
+    }
 }
 
 .application {
@@ -67,7 +98,12 @@
     box-sizing: border-box;
     column-gap: 138px;
 }
-
+@media (min-width: 1024px) {
+        .item {
+            padding-inline: 160px;
+            width: 80%;
+        }
+}
 .item:nth-child(2) {
     flex-direction: row;
     padding: 160px 190px;
@@ -232,3 +268,5 @@
     background-color: #ABFC4F;
     border: none;
 }
+
+

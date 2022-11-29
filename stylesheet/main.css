@@ -11,8 +11,8 @@
     background-color: var(--col-bg-light);
     border-radius: 0px 0px 70px 70px;
     position: relative;
-    
 }
+
 .banner__img {
     position: absolute;
 }
@@ -30,9 +30,13 @@
     top: 50%;
     transform: translateY(-50%);
     left: -65%;
-    animation: rotate 10s linear infinite;
     position: absolute;
 }
+/* @media screen (max-width: 834px) {
+    .compas__img {
+        left: -123%;
+    }  
+}  */
 .compas__img--right {
     right: -65%;
     left: auto;
